@@ -24,6 +24,21 @@ router.get('/:postId/:offset', function(req, res, next) {
 
 });
 
+// Gets list of all posts
+router.get('/:postId', function(req, res, next) {
+  var post = req.params.postId;
+
+  CommentModel.find(function(err, commentList) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      res.json(commentList);
+    }
+  });
+
+});
+
 // posts the comment, ASSUMING postId is already added
 router.post('/', function(req, res, next) {
 
