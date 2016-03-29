@@ -7,11 +7,12 @@ var commentRoute = require('./routes/CommentRoute');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var port = process.env.PORT || 3000;
-var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/YakYik'
 
 
 var app = express();
+app.set('port', (process.env.PORT || 3000));
+var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/YakYik'
+
 
 //bodyParser has to be loaded before calling the routes
 app.use(bodyParser.json());
@@ -38,5 +39,6 @@ mongoose.connect(mongoURI, function(error) {
 module.exports = app;
 
 // Listen on port 3000
-app.listen(port);
-console.log(port);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
