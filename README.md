@@ -1,7 +1,7 @@
 # YakYik
 
-## Used Node js, Express js, and Mongodb (mongoose) to build a simple REST API for a template forum
-- Will create a frontend eventually
+Yak Yik is a really simple Node js implementation of a REST api of an online forum.  Technologies used were Node JS, Express JS, and Mongo DB.
+
 
 ## Installation
 - Go into the main directory and type "npm install"
@@ -39,3 +39,9 @@
 
 #### DELETE
 - https://yakyik.herokuapp.com/comments/{id} // deletes a comment of matching id
+
+
+## Todo
+- Implement a front-end SPI using Angular JS (or React)
+- Implement email based authentication and tokenization using Passport 
+
