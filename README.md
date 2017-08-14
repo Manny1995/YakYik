@@ -1,38 +1,41 @@
 # YakYik
 
-##Used Node js, Express js, and Mongodb (mongoose) to build a simple REST API for a template forum
+## Used Node js, Express js, and Mongodb (mongoose) to build a simple REST API for a template forum
 - Will create a frontend eventually
 
-##CRUD Operations
+## Installation
+- Go into the main directory and type "npm install"
 
-###Getting Posts
+## CRUD Operations
 
-####GET
+### Getting Posts
+
+#### GET
 - https://yakyik.herokuapp.com/posts/{offset} // returns 5 posts with an offset
 - https://yakyik.herokuapp.com/posts // returns all posts
 - https://yakyik.herokuapp.com/posts/{id} // returns 1 post of matching id
 
-####POST
+#### POST
 - https://yakyik.herokuapp.com/posts // posts a new post
 
-####UPDATE
+#### UPDATE
 - https://yakyik.herokuapp.com/posts/{id} // updates a post of matching id
 
-####DELETE
+#### DELETE
 - https://yakyik.herokuapp.com/posts/{id} // deletes a post of matching id
 
-###Getting Comments
+### Getting Comments
 
-####GET
+#### GET
 - https://yakyik.herokuapp.com/comments/{postId}/{offset} // returns 5 comments with an offset of a comment
 - https://yakyik.herokuapp.com/comments/{postId} // returns all comments of a post
 - https://yakyik.herokuapp.com/comments/{id} // returns 1 post of matching comment id
 
-####POST
+#### POST
 - https://yakyik.herokuapp.com/comments/{postId} // posts a new comment to a post 
 
-####UPDATE
+#### UPDATE
 - https://yakyik.herokuapp.com/comments/{id} // updates a comment of matching id
 
-####DELETE
+#### DELETE
 - https://yakyik.herokuapp.com/comments/{id} // deletes a comment of matching id
