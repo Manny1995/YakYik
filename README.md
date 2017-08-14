@@ -2,6 +2,8 @@
 
 Yak Yik is a really simple Node js implementation of a REST api of an online forum.  Technologies used were Node JS, Express JS, and Mongo DB.
 
+**Disclaimer** This was done for educational reasons to learn about Node JS, so obviously it is nowhere near ready for production :P
+
 
 ## Installation
 - Go into the main directory and type "npm install"
